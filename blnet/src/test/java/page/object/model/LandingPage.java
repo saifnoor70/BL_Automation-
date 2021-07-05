@@ -10,6 +10,10 @@ import org.openqa.selenium.support.How;
 
 /**
  * @author Here we have  All the webElements of Landing Pages
+ * Note: Kindly read comment of a coding section before going through code , it will help to understand the code . We have separated 
+ * home Page Into many Section 
+ * Section 1 = Top Navigation Bar
+ * Section 2 = Recharge & Postpaid Bill Payment 
  *
  */
 public class LandingPage {
@@ -20,7 +24,9 @@ public class LandingPage {
 	{
 		this.driver=ldriver;
 	}
-    
+    /** Section : 1  = TOP Navbar , Here we have all the webelement of Top Navigation bar
+     * 
+     */
 	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[1]/aside/div/div/section[1]/div[1]/nav/ul/li[1]/a") 
 	public WebElement homeButton;       
 	
@@ -55,6 +61,37 @@ public class LandingPage {
 
 	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[1]/header/div/div/div[3]/div/nav/ul/li/a/span")
 	   public WebElement myAccountButton;
+	 
+	 
+	 /**Section : 2 = Recharge and Postpaid Bill Amount WebElement
+	  * 
+	  * 
+	  */
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"number_1\"]")
+	 public WebElement mobileNumber;
+		 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"amount_1\"]")
+	 public  WebElement rechargeAmount;
+		 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"email\"]")
+	 public WebElement emailAddress ;
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[2]/section/div/div/div/form/div[1]/div[4]/button")
+	 public WebElement rechargeYourAmountButton;
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[2]/section/div/div/div/div/a")
+	  public  WebElement addAnotherNumber;
+	 
+	 public void RechargeAmountMethod(String number, String amount, String email)
+	 {
+		 //By calling this method we can easily recharge amount at once
+		 mobileNumber.sendKeys(number);
+		 rechargeAmount.sendKeys(amount);
+		 emailAddress.sendKeys(email);
+		 rechargeYourAmountButton.click();	 
+	 }
+
 	 
 	 
 	 public void navberTest() {

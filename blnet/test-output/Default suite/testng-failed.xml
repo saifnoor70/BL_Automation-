@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.BLNet.testCases.HomeToOfferToPrePaidTest">
+      <class name="com.BLNet.testCases.RechargeSubmit">
         <methods>
-          <include name="TillFeedbackRecieved"/>
+          <include name="TitleTest"/>
         </methods>
-      </class> <!-- com.BLNet.testCases.HomeToOfferToPrePaidTest -->
+      </class> <!-- com.BLNet.testCases.RechargeSubmit -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
