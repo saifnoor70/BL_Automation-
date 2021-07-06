@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.BLNet.testCases;
+package testCases;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,9 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import helper.BrowserFactory;
-import page.object.model.LandingPage;
-import page.object.model.digitalServicesPage;
-import page.object.model.prePaidPage;
+import pageObjectModel.LandingPagePOM;
+import pageObjectModel.digitalServicesPage;
+import pageObjectModel.prePaidPage;
 
 /**
  * @author User
@@ -35,7 +35,7 @@ public class HomeToOfferToPrePaidTestTC {
 	{
 		WebDriver driver = BrowserFactory.StartBrowser("chrome", "https://www.banglalink.net/en"); //1. landing to Homepage using StartBrowser method from browserFactory Class
 		Actions action = new Actions(driver); 
-	    LandingPage homeNav = PageFactory.initElements(driver, LandingPage.class); // Special note :  homeNav is the object of LandingPage class , we can call any variable or method from LandingPage class using this obejct
+	    LandingPagePOM homeNav = PageFactory.initElements(driver, LandingPagePOM.class); // Special note :  homeNav is the object of LandingPage class , we can call any variable or method from LandingPage class using this obejct
 	    digitalServicesPage digNav = PageFactory.initElements(driver, digitalServicesPage.class); // same as Previous Comment , digNav is the object of digitalServicesPage class
 	    prePaidPage prePaidPobj =PageFactory.initElements(driver, prePaidPage.class); // prePaidPobj is the object of prepaidPage Class
 	    action.moveToElement(homeNav.offerButton).perform(); //2. Hovering mouse on offer

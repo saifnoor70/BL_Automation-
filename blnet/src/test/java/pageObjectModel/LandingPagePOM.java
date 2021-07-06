@@ -1,7 +1,7 @@
 /**
  * 
  */
-package page.object.model;
+package pageObjectModel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,11 +16,11 @@ import org.openqa.selenium.support.How;
  * Section 2 = Recharge & Postpaid Bill Payment 
  *
  */
-public class LandingPage {
+public class LandingPagePOM {
 	
 	WebDriver driver;
 	
-	public LandingPage(WebDriver ldriver)
+	public LandingPagePOM(WebDriver ldriver)
 	{
 		this.driver=ldriver;
 	}
@@ -91,9 +91,37 @@ public class LandingPage {
 		 emailAddress.sendKeys(email);
 		 rechargeYourAmountButton.click();	 
 	 }
+	 
+	 /**
+	  * Section : 3 = Short Keys WebElement
+	  * 
+	  */
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[3]/section/div/div/button[1]")
+	 public WebElement leftArrowSK;
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[3]/section/div/div/button[2]")
+	 public WebElement rightArrowSK;
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[3]/section/div/div/div/div/div[2]/div/div/a/div/i/img")
+	  public  WebElement bondhoSimOfferSK;
+	 
+     @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[3]/section/div/div/div/div/div[3]/div/div/a/span")
+     public WebElement internetofferSK;
+     
+     @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[3]/section/div/div/div/div/div[3]/div/div/a/span")
+	  public  WebElement emergencyBalanceSK;
+	 
+     @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[3]/section/div/div/div/div/div[6]/div/div/a/span")
+     public WebElement toffeSK;
+     
+     @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[3]/section/div/div/div/div/div[7]/div/div/a/span")
+     public WebElement amarOffferSK;
+     
+     @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[3]/section/div/div/div/div/div[8]/div/div/a/span")
+	  public  WebElement vibeSK;
 
-	 
-	 
+     
 	 public void navberTest() {
 		 digitalServicesButton.click();
 		 

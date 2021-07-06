@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.BLNet.testCases;
+package testCases;
 
 import java.util.concurrent.TimeUnit;
 
@@ -10,8 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import helper.BrowserFactory;
-import page.object.model.LandingPage;
-import page.object.model.digitalServicesPage;
+import pageObjectModel.LandingPagePOM;
+import pageObjectModel.digitalServicesPage;
 
 /**
  * @author User
@@ -25,7 +25,7 @@ public class NavbarLinkTest {
 	{ 
 		
 		WebDriver driver = BrowserFactory.StartBrowser("chrome", "https://www.banglalink.net/en");
-	    LandingPage homeNav = PageFactory.initElements(driver, LandingPage.class);
+	    LandingPagePOM homeNav = PageFactory.initElements(driver, LandingPagePOM.class);
 	    digitalServicesPage digNav = PageFactory.initElements(driver, digitalServicesPage.class);
 	    homeNav.navberTest();
 	    digNav.homeButton1.click();
