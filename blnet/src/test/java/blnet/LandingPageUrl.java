@@ -2,6 +2,11 @@ package blnet;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * This is initial starting of Automation , This has no relation with Other Three Packages helper, page.object.model & 
+ * com.BLNettestCases
+ */
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;

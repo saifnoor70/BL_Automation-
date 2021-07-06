@@ -16,9 +16,20 @@ import page.object.model.prePaidPage;
 
 /**
  * @author User
- *
+ * In Every test Case file , In comment Section We have mentioned What is going to happen in that particular Test Case for Different Method 
+ *  
+ * 
+ * Read me # In this "TillFeedbackRecieved" We have Test cases as 
+ *                        1.Offer NavBar(hover)
+ *                        2.Prepaid(click)
+ *                        3.Four Days Pack(Click)
+ *                        4.Wait(5s)
+ *                        5.Five Star Feedback(Click)
+ *                        6.Wait(5s)
+ *                        7.Feedback Close(Click)
+ *                        8.Four Days Pack(Click)
  */
-public class HomeToOfferToPrePaidTest {
+public class HomeToOfferToPrePaidTestTC {
 	@Test
 	public void TillFeedbackRecieved() throws InterruptedException
 	{
@@ -37,10 +48,7 @@ public class HomeToOfferToPrePaidTest {
 	    Thread.sleep(5000);
 	    
 	    JavascriptExecutor jse =(JavascriptExecutor)driver;
-	    jse.executeScript("arguments[0].click()",prePaidPobj.fourDaysPackDropDown); //6. clicking on 4 days pack DropDown using jse 
-	   
-	   
-		
+	    jse.executeScript("arguments[0].click()",prePaidPobj.fourDaysPackDropDown); //6. clicking on 4 days pack DropDown using jse	
 	}
 
 }
