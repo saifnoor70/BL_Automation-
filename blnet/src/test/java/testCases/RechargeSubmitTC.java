@@ -16,7 +16,10 @@ import pageObjectModel.RechargeSubmitPage;
 
 /**
  * @author User
- * There Will Be TC at the last of the class ma,e of every Test Cases 
+ * *In Every test Case file , In comment Section We have mentioned What is going to happen(Test Steps) in that particular Test Case for Different Method 
+ *  
+ * 
+ * Read me # In this "TitleAndUrlTest" We have Test Steps as 
  */
 public class RechargeSubmitTC {
 	

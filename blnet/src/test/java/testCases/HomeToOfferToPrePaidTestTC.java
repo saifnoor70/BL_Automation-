@@ -19,7 +19,7 @@ import pageObjectModel.prePaidPage;
  * In Every test Case file , In comment Section We have mentioned What is going to happen in that particular Test Case for Different Method 
  *  
  * 
- * Read me # In this "TillFeedbackRecieved" We have Test cases as 
+ * Read me # In this "TillFeedbackRecieved" We have Test Steps as 
  *                        1.Offer NavBar(hover)
  *                        2.Prepaid(click)
  *                        3.Four Days Pack(Click)
