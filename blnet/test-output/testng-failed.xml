@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.ShortKeysUrlTestCase">
         <methods>
-          <include name="AmarOfferTest"/>
+          <include name="bondhoSimOfferTest"/>
         </methods>
       </class> <!-- testCases.ShortKeysUrlTestCase -->
     </classes>

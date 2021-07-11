@@ -13,13 +13,15 @@ import helper.BrowserFactory;
 import pageObjectModel.BondhoSimOfferPOM;
 import pageObjectModel.InternetOfferPOM;
 import pageObjectModel.LandingPagePOM;
+import pageObjectModel.VibesPOM;
 
 /**
  * @author User
  *In Every test Case file , In comment Section We have mentioned What is going to happen(Test Steps) in that particular Test Case for Different Method 
  *  
  * 
- * Read me # In this "bondhoSimOfferTest" We have Test Steps as 
+ * Read me # In this "bondhoSimOfferTest" We have Test Steps as
+ *                                  
  * 
  * Read me # In this "AmarOfferTest" We have Test Steps as
  */
@@ -41,7 +43,7 @@ public class ShortKeysUrlTestCase {
 		
 		homeP.bondhoSimOfferSK.click();
 		softAssert.assertEquals(bondhoSimOfferP.bondhoSimOfferText.getText(),"Bondho SIM Offer");
-		softAssert.assertEquals(driver.getCurrentUrl(),"https://www.banglalink.net/en/prepaid/others/500mb-7-days-bondho-simoffer");
+		softAssert.assertEquals(driver.getCurrentUrl(),"https://www.banglalink.net/en/prepaid/others/500mb-7-days-bondho-sim-offer");
 		bondhoSimOfferP.checkStatusButton.click();
 		bondhoSimOfferP.phoneNumberInput.sendKeys("01913594372");
 	    bondhoSimOfferP.checkStatusButton.click();
@@ -70,6 +72,28 @@ public class ShortKeysUrlTestCase {
 		softAssert.assertEquals(amarOfferP.amarOfferText.getText(),"AmarOffer");
 		softAssert.assertEquals(driver.getCurrentUrl(),"https://www.banglalink.net/en/prepaid/internet");
 		softAssert.assertAll();
+	}
+	@Test
+	public void VibeTest()
+	{
+		/**
+		 * Test Step: 
+		 * 
+		 */
+		WebDriver driver = BrowserFactory.StartBrowser("chrome", "https://www.banglalink.net/en");
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		LandingPagePOM homeP = PageFactory.initElements(driver, LandingPagePOM.class);
+		VibesPOM vibesP = PageFactory.initElements(driver, VibesPOM.class);
+		SoftAssert softAssert = new SoftAssert();
+		
+		homeP.vibeSK.click();
+		vibesP.buttonSeven.click();
+		wait.until(ExpectedConditions.elementToBeClickable(vibesP.buttonFive));
+		vibesP.buttonFive.click();
+
+		softAssert.assertEquals(driver.getCurrentUrl(),"https://www.banglalink.net/en/digital-services/apps/vibe");
+		softAssert.assertAll();
+		
 	}
 
 }
