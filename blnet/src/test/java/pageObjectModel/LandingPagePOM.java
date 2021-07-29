@@ -121,22 +121,99 @@ public class LandingPagePOM {
      @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[3]/section/div/div/div/div/div[8]/div/div/a/span")
 	  public  WebElement vibeSK;
 
-     
-	 public void navberTest() {
-		 digitalServicesButton.click();
-		 
-		 
-			 
-	 }
+     /**
+      * Trending 
+      */
+     @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[5]/div/div/div[1]/h3")
+     public WebElement trendingText;
 	 
-//	 @FindBy(how=How.XPATH,using="")
-//	 public WebElement ;
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[5]/div/div/section[2]/div/button[1]")
+	 public WebElement prevSlideButton;
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[5]/div/div/section[2]/div/button[2]")
+	 public WebElement nextSlideButton;
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[5]/div/div/section[2]/div/div/div/div[4]/div/div/div/div[2]/div/a")
+	 public WebElement tk57;
+     
+     
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[5]/div/div/section[2]/div/div/div/div[8]/div/div/div/div[2]/div/a/b")
+	 public WebElement tk159;
 //	 
-//	 @FindBy(how=How.XPATH,using="")
-//	  public  WebElement ;
-//	 
-//    @FindBy(how=How.XPATH,using="")
-//    public WebElement ;
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[5]/div/div/section[2]/div/div/div/div[5]/div/div/div/div[2]/div/a")
+	  public  WebElement tk64;
+	 
+	   @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[5]/div/div/section[2]/div/div/div/div[4]/div/div/div/div[3]/ul/li[1]/i/svg/g/path[2]")
+	   public WebElement likeTk57;
+		 
+	   @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[5]/div/div/section[2]/div/div/div/div[4]/div/div/div/div[3]/ul/li[2]/i/svg")
+	   public WebElement bookmarkTk57;
+		 
+	   @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[5]/div/div/section[2]/div/div/div/div[9]/div/div/div/div[3]/ul/li[3]/i/svg")
+	   public WebElement shareTk57;
+	   
+	   /**
+	    * Section : Explore Device
+	    * 
+	    */
+	   
+	   @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[6]/div/div/div[1]/h2")
+	   public WebElement exploreDevice;
+	   
+	   @FindBy(how=How.CSS,using="#app > div > section.explore.section > div > div > section > div > ul > li.follower")
+	   public WebElement iPhoneExploreDevice;
+	   
+	   @FindBy(how=How.CSS,using="#app > div > section.explore.section > div > div > section > div > ul > li.follower")
+	   public WebElement oppoExploreDevice;
+	   
+	   @FindBy(how=How.CSS,using="#app > div > section.explore.section > div > div > section > div > ul > li.follower")
+	   public WebElement samsungexploreDevice;
+	   
+	   @FindBy(how=How.CSS,using="#app > div > section.explore.section > div > div > section > div > ul > li.follower")
+	   public WebElement symphonyExploreDevice;
+	   
+	   @FindBy(how=How.CSS,using="#app > div > section.explore.section > div > div > section > div > ul > li.follower")
+	   public WebElement vivoExploreDevice;
+	   
+	   @FindBy(how=How.CSS,using="#app > div > section.explore.section > div > div > section > div > ul > li:nth-child(7) > button")
+	   public WebElement miExploreDevice;
+	   
+	   @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[6]/div/div/section/div/div/div/div[7]/div/div/div/aside/div/h3")
+	   public WebElement xiamoniSmartPhoneText;
+	   /**
+	    * Section: Digital Services 
+	    * 
+	    */
+       @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[7]/div/div/div[1]/h3")
+       public WebElement digitalServicesText;
+       
+       @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[7]/div/div/ul/li[1]")
+       public WebElement toffeDS;
+
+       
+       @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[7]/div/div/ul/li[3]")
+       public WebElement dakterBhaiDS;
+
+       @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[7]/div/div/ul/li[2]")
+       public WebElement vibeDS;
+
+       @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[7]/div/div/ul/li[4]")
+       public WebElement myBLAppDS;
+
+       @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[7]/div/div/ul/li[5]")
+       public WebElement gameOnDs;
+       
+       @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[6]/div/div/div[3]/a")
+       public WebElement viewAllOffers;
+       
+       @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/section[8]/div/div/div[2]/div/a")
+       public WebElement viewAllDigitalServices;
+       
+       
+//       @FindBy(how=How.XPATH,using="")
+//       public WebElement ;
+
+
 
 
 }

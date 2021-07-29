@@ -30,7 +30,7 @@ public class NavbarLinkTest {
 		WebDriver driver = BrowserFactory.StartBrowser("chrome", "https://www.banglalink.net/en");
 	    LandingPagePOM homeNav = PageFactory.initElements(driver, LandingPagePOM.class);
 	    digitalServicesPage digNav = PageFactory.initElements(driver, digitalServicesPage.class);
-	    homeNav.navberTest();
+	    //homeNav.navberTest();
 	    digNav.homeButton1.click();
 	    homeNav.searchButton.sendKeys("5000");
 	    

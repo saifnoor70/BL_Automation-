@@ -22,10 +22,13 @@ public class digitalServicesPage {
 	
 	 
 	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[1]/header/div/div/div[2]/nav/ul/li[1]/a")
-	  public  WebElement homeButton1;
+	 public  WebElement homeButton1;
 	 
 	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[1]/header/div/div/div[2]/nav/ul/li[4]/a")
-	    WebElement businessButton1;
+	 public   WebElement businessButton1;
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[3]/section[2]/div/div/div[1]/ul[2]/li[1]/div/div[1]/div[1]/h2")
+	 public WebElement funAndEntertainment;
 	 
 //   @FindBy(how=How.XPATH,using="")
 //   WebElement ;
